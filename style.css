@@ -1,0 +1,127 @@
+
+:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.container {
+    width: 100%;
+    max-width:  1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*Title*/
+
+.title {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #79aa89;
+}
+
+/*Input*/
+
+.keyboard-input {
+    display: flex;
+    justify-content: center;
+}
+
+.input-pole {
+    height: 200px;
+    width: 707px;
+    margin-bottom: 10px;
+}
+
+/*Keyboard*/
+
+.keyboard {
+    margin: 0 auto;
+    border: 3px solid black;
+    background-color: #888888;
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+    width: 702px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.key {
+    float: left;
+    width: 30px;
+    height: 30px;
+    border: 1px solid slategray;
+    border-radius: 4px;
+    margin: 3px;
+    padding: 4px;
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+    background-color: #444444;
+    transition: .3s;
+}
+
+.key:hover {
+    background-color: #79aa89;
+}
+
+.key:active{
+    background-color: #03ff03;
+    border-radius: 50px;
+  }
+
+.backspace {
+    width: 87px;
+}
+
+.tab {
+    width: 40px;
+}
+
+.capslock, .lshift {
+    width: 87px;
+}
+
+.enter, .rshift {
+    width: 76px;
+}
+
+.space {
+    width: 317px;
+}
+
+.tab,
+.capslock,
+.lshift,
+.rshift,
+.lctrl,
+.rctrl,
+.win,
+.lalt,
+.ralt,
+.up,
+.left,
+.down,
+.right,
+.backspace,
+.enter,
+.del {
+    background-color: #222222;
+}
+
+.selected {
+    background-color: #03ff03;
+    border-radius: 50px;
+  }
